@@ -29,7 +29,7 @@ Evaluations were conducted on the benchmark Berkley Segmentation Dataset (BSDS50
 ├── visualize.py     # Qualitative Matplotlib visualization and comparison generator
 ```
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 > **Note:** Run the following commands in your terminal (Command Prompt / PowerShell on Windows, or Terminal on macOS/Linux) while located in the project's root folder.
 
@@ -50,7 +50,7 @@ Download the [BSDS500 Dataset](https://www2.eecs.berkeley.edu/Research/Projects/
 
 ---
 
-## 💻 Reproducibility & Usage
+## Reproducibility & Usage
 
 All commands below should be executed from the project root directory.
 
@@ -98,7 +98,7 @@ python infer.py --image your_image.jpg --checkpoint best_model_laplacian.pth --u
 
 ---
 
-## 🧠 Technical Highlights
+## Technical Highlights
 
 * **Lightweight U-Net (480K parameters):** Standard segmentation U-Nets typically have over 30M parameters, which easily overfit to noise. Our custom 480K parameter design acts as an information bottleneck, compelling the network to learn global boundary structures rather than memorizing Canny micro-texture artifacts.
 * **Laplacian Induction ($\alpha = 0.5$):** Pre-sharpening inputs using a discrete 2nd-derivative Laplacian kernel introduces an inductive bias that amplifies gradient discontinuities, streamlining boundary convergence.
