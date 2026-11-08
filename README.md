@@ -27,6 +27,7 @@ Evaluations were conducted on the benchmark Berkley Segmentation Dataset (BSDS50
 ├── evaluate.py      # BSDS500 leak-free benchmark evaluation and threshold tuning
 ├── infer.py         # CLI tool for standalone edge detection on arbitrary images
 ├── visualize.py     # Qualitative Matplotlib visualization and comparison generator
+```
 
 ## 🚀 Installation & Setup
 
