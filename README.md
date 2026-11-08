@@ -48,6 +48,17 @@ pip install -r requirements.txt
 ### 3. Dataset Preparation:
 Download the [BSDS500 Dataset](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html) and place the dataset's `data` folder inside this project's root directory. The `dataset.py` loader is pre-programmed to automatically locate folders named `data/` or `BSDS500_repo/`.
 
+### 4. Pre-trained Model Weights:
+Pre-trained model weights are provided in the `checkpoints/` directory:
+* `checkpoints/best_model_raw.pth`
+* `checkpoints/best_model_laplacian.pth`
+
+> **Important:** To run `evaluate.py` or `visualize.py` out-of-the-box without retraining, copy or move these two `.pth` files from the `checkpoints/` folder into the **root directory**:
+> * **Windows (PowerShell/CMD):** `copy checkpoints\*.pth .`
+> * **macOS / Linux:** `cp checkpoints/*.pth .`
+> 
+> *(If you train the models from scratch using `train.py`, the new weights will automatically save directly to the root directory).*
+
 ---
 
 ## Reproducibility & Usage
