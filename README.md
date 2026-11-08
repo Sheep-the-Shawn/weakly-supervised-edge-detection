@@ -106,6 +106,6 @@ python infer.py --image your_image.jpg --checkpoint best_model_laplacian.pth --u
 
 ---
 
-## 🔗 Acknowledgements
+## Acknowledgements
 * **Benchmark:** The Berkeley Segmentation Dataset and Benchmark (BSDS500).
 * **Course:** CPS 843 / CP 8307: Computer Vision, Department of Computer Science.
